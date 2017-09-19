@@ -6,6 +6,7 @@
 
 <script>
   export default {
+    name: 'WuiButton',
     props: {
       type: {
         type: String,
