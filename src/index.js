@@ -1,7 +1,7 @@
-import WuiButton from './components/Button'
+import WButton from './components/Button'
 
 const components = {
-  WuiButton
+  WButton
 }
 
 const install = function (Vue) {
@@ -13,8 +13,7 @@ const install = function (Vue) {
 
 const Wui = {
   version: '0.0.1',
-  install,
-  WuiButton
+  install
 }
 
 export default Wui

@@ -4,6 +4,8 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import Wui from '../src'
+import './static/prism.js'
+import './static/prism.css'
 
 Vue.config.productionTip = false
 

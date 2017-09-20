@@ -1,6 +1,8 @@
-# wui
+# WUI
 
 > A Vue.js project
+
+> UI组件练习
 
 ## Build Setup
 

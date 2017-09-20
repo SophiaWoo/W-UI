@@ -1,12 +1,12 @@
 <template>
-  <div id="app">
+  <div id='app'>
     <header></header>
-    <div class="content">
-      <div class="sidebar">
+    <div class='content'>
+      <div class='sidebar'>
         <p>Basic</p>
         <ul>
-          <li><router-link to="/button">Button 按钮</router-link></li>
-          <li><router-link to="/">Layout 布局</router-link></li>
+          <li><router-link to='/button'>Button 按钮</router-link></li>
+          <li><router-link to='/'>Layout 布局</router-link></li>
         </ul>
       </div>
       <router-view></router-view>
@@ -21,10 +21,11 @@ export default {
 }
 </script>
 
-<style lang="less">
+<style lang='less'>
   html, body {
     margin: 0;
     padding: 0;
+    font-size: 16px;
   }
   #app {
     header {
@@ -40,6 +41,7 @@ export default {
     .sidebar {
       width: 250px;
       height: 100%;
+      overflow-y: auto;
       p {
         font-weight: bold;
         margin: 0;
@@ -63,6 +65,9 @@ export default {
       p:hover, li:hover {
         background-color: #FFCCCC;
       }
+    }
+    pre {
+      overflow-x: auto;
     }
   }
 </style>
