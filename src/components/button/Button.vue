@@ -1,6 +1,6 @@
 <template>
   <button :disabled="disabled" @click='onClick' :type="nativeType" :class='classes'>
-    <span v-if='icon'></span>
+    <span v-if='icon' :class="['w-icon',`w-icon-${icon}`]"></span>
     <slot></slot>
   </button>
 </template>
@@ -57,10 +57,10 @@
       color: #fff;
     }
   }
-  .w-type-variables(default, @btn-default-color);
-  .w-type-variables(success, @btn-success-color);
-  .w-type-variables(info, @btn-info-color);
-  .w-type-variables(warn, @btn-warn-color);
+  .w-type-variables(default, @default-color);
+  .w-type-variables(success, @success-color);
+  .w-type-variables(info, @info-color);
+  .w-type-variables(warn, @warn-color);
 
   .w-size-variable(@size, @width, @height, @font-size, @padding-space) {
     .w-button-@{size} {
@@ -74,5 +74,9 @@
   .w-size-variable(md, @md-width, @md-height, @md-font-size, @md-padding-space);
   .w-size-variable(lg, @lg-width, @lg-height, @lg-font-size, @lg-padding-space);
 
+  .w-disabled {
+    opacity: 0.6;
+  }
+  
 </style>
 
